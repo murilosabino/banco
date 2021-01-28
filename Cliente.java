@@ -1,40 +1,31 @@
 //dados básicos para abertura de conta
-    public class Cliente{
+public class Cliente{
         private String nome;
         private String cpf;
         private String dataNascimento;
-        private String sexo;
+        private boolean sexo; // True == Masculino  | False == Feminino
         private String profissao;
-    
 
-    public Cliente(String nome, String cpf, String dataNascimento){
+    public Cliente(String nome, String cpf, String dataNascimento, String profissao, boolean sexo){
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
-        setProfissao(profissao);
-        setSexo(sexo);
-
+        this.profissao = profissao;
+        this.sexo = sexo;
         }
-    
 
     //encapsulamento
     public String getProfissao(){
-        return profissao;}
+        return profissao;
+    }
     
-    public String getSexo(){
-        return sexo;}
-
+    public boolean hasSexo(){
+        return sexo;
+    }
     
-    public void setProfissao(String profissao){
-        this.profissao = profissao;}
-
-    public void setSexo(String sexo){
-        this.sexo = sexo;}
-    
-        public void imprime(){
-            System.out.println(this.nome + "\n" + this.cpf + "\n" + this.dataNascimento + "\n" 
-            + this.profissao + "\n" + this.sexo);
-        }
+    public void imprime(){
+        System.out.print(this.nome + " -- " + this.cpf + " -- " + this.dataNascimento + " -- " + this.profissao + " -- " + this.sexo);
+    }
 
 }
 
