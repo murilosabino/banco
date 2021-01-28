@@ -1,2 +1,2 @@
-# banco
-Projeto de um banco, feito para estudos
+# Banco
+Projeto de um banco, feito para estudos.
