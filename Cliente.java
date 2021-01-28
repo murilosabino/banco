@@ -1,12 +1,14 @@
+import java.sql.Date;
+
 //dados básicos para abertura de conta
 public class Cliente{
         private String nome;
         private String cpf;
         private String dataNascimento;
-        private boolean sexo; // True == Masculino  | False == Feminino
+        private Boolean sexo; // True == Masculino  | False == Feminino
         private String profissao;
 
-    public Cliente(String nome, String cpf, String dataNascimento, String profissao, boolean sexo){
+    public Cliente(String nome, String cpf, String dataNascimento, String profissao, Boolean sexo){
         this.nome = nome;
         this.cpf = cpf;
         this.dataNascimento = dataNascimento;
@@ -19,7 +21,7 @@ public class Cliente{
         return profissao;
     }
     
-    public boolean hasSexo(){
+    public Boolean hasSexo(){
         return sexo;
     }
     
