@@ -12,6 +12,12 @@ public class Banco {
         Poupanca cp = new Poupanca(1000.0,0001, "400050-2");
         System.out.println(cc);
         System.out.println(cp);
+        cc.deposita(1000);
+        System.out.println(cc);
+        cp.deposita(500);
+        System.out.println(cp);
 
+        cp.saque(100);
+        System.out.println(cp);
     }
 }

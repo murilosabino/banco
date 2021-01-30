@@ -11,4 +11,13 @@ public class Conta {
     protected int agencia;
     protected String conta;
 
+    public void deposita(int valor){
+        saldo = this.saldo + valor;
+    }
+
+    public void saque(int valor){
+        saldo = this.saldo - valor;
+    }
+
+
 }
