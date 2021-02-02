@@ -16,7 +16,11 @@ public class Conta {
     }
 
     public void saque(int valor){
-        saldo = this.saldo - valor;
+        if(valor < saldo){
+        saldo = this.saldo - valor;}
+        else{
+            System.out.println("Você não possui saldo suficiente para essa operação.");
+        }
     }
 
 
